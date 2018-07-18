@@ -5,6 +5,7 @@
     <PackageId>DummyLogger_PaulSavoie</PackageId>
     <Authors>Paul Savoie</Authors>
     <Company>SignPath GmbH</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
