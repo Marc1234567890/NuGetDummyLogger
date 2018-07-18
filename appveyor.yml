@@ -1,2 +1,4 @@
 image: Visual Studio 2017
 clone_folder: C:\Users\paul.savoie\Source\Repos\DummyLogger
+artifacts:
+  - path: '**\*.nupkg'
