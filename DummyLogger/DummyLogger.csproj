@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>DummyLogger_PaulSavoie</PackageId>
+    <Authors>Paul Savoie</Authors>
+    <Company>SignPath GmbH</Company>
+  </PropertyGroup>
+
+</Project>
