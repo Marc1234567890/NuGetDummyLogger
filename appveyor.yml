@@ -4,7 +4,7 @@ artifacts:
   - path: '**\*.nupkg'
 notifications:
 - provider: Webhook
-  url: http://signpathdummy.proxy.beeceptor.com/api
+  url: http://requestbin.fullcontact.com/x0jhfqx0
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
