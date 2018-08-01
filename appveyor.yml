@@ -14,7 +14,7 @@ notifications:
      secure: zO9FwxohFcSdFM22yNOYRx00kWIbzASdHO5DRzQAGoc=
   body: >-
     {
-        "AccountName": {{PaulSavoie}}
+        "AccountName": "PaulSavoie"
         "ProjectSlug": {{projectName}},
         "BuildVersion": {{buildVersion}}
         "CertificateConfigurationId": "1234-5678-9ABC-DEFG"
