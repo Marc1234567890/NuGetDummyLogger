@@ -2,3 +2,20 @@ image: Visual Studio 2017
 clone_folder: C:\Users\paul.savoie\Source\Repos\DummyLogger
 artifacts:
   - path: '**\*.nupkg'
+notifications:
+- provider: Webhook
+  url: http://signpathdummy.proxy.beeceptor.com/api
+  on_build_success: true
+  on_build_failure: false
+  on_build_status_changed: false
+  method: POST
+  headers:
+    Authorization:
+     secure: zO9FwxohFcSdFM22yNOYRx00kWIbzASdHO5DRzQAGoc=
+  body: >-
+    {
+        "AccountName": {{PaulSavoie}}
+        "ProjectSlug": {{projectName}},
+        "BuildVersion": {{buildVersion}}
+        "CertificateConfigurationId": "1234-5678-9ABC-DEFG"
+    }
