@@ -4,18 +4,18 @@ artifacts:
   - path: '**\*.nupkg'
 notifications:
 - provider: Webhook
-  url: http://requestbin.fullcontact.com/x0jhfqx0
+  url: https://app.signpath.io/API/v1/3330f1ef-4e98-4842-bd21-0a45f0e96d5d/Integrations/AppVeyor
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
   method: POST
   headers:
     Authorization:
-     secure: zO9FwxohFcSdFM22yNOYRx00kWIbzASdHO5DRzQAGoc=
+     secure: 9dY3Lch5Xs4v2WtHBA8+B6kDtrzcWZFXNIdPyW57yBHGIUWVqqB6Bo+aHtF9EXjx
   body: >-
     {
         "AccountName": "PaulSavoie"
         "ProjectSlug": {{projectName}},
         "BuildVersion": {{buildVersion}}
-        "CertificateConfigurationId": "1234-5678-9ABC-DEFG"
+        "SigningPolicyId": "455d02f1-2c77-42a7-b9a6-577d2aab7b6e"
     }
