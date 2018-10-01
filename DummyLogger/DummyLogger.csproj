@@ -7,11 +7,4 @@
     <Company>SignPath GmbH</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Update="Eicar.txt" Pack="true" PackagePath="lib\">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
