@@ -4,14 +4,14 @@ artifacts:
   - path: '**\*.nupkg'
 notifications:
 - provider: Webhook
-  url: https://app.signpath.io/API/v1/3330f1ef-4e98-4842-bd21-0a45f0e96d5d/Integrations/AppVeyor
+  url: https://fqa.test.signpath.io/API/v1/3330f1ef-4e98-4842-bd21-0a45f0e96d5d/Integrations/AppVeyor
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
   method: POST
   headers:
     Authorization:
-     secure: 9dY3Lch5Xs4v2WtHBA8+B6kDtrzcWZFXNIdPyW57yBHGIUWVqqB6Bo+aHtF9EXjx
+     secure: XEmmnhSPcmPqSABdyt5ewa07wGw0aNSyI4ZhBhAaDRjKEWC3cme9WTNoTlSgQd0Q
   body: >-
     {
         "AccountName": "PaulSavoie"
