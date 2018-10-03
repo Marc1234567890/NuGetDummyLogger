@@ -17,5 +17,5 @@ notifications:
         "AccountName": "PaulSavoie"
         "ProjectSlug": {{projectName}},
         "BuildVersion": {{buildVersion}}
-        "SigningPolicyId": "40737462-065a-4c5d-8801-480aa1d1c9a6"
+        "SigningPolicyId": "301b265c-5bfe-423d-ad17-6d324305b75b"
     }
