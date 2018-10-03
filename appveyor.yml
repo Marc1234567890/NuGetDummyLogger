@@ -4,7 +4,7 @@ artifacts:
   - path: '**\*.nupkg'
 notifications:
 - provider: Webhook
-  url: http://requestbin.fullcontact.com/1ay30531
+  url: https://fqa.test.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
