@@ -14,8 +14,8 @@ notifications:
      secure: NSKPP67oKh86TxcCLb8ZEaIxXwOUGl7/mkdLiBXFY6MWXJxH2Z2Uh/C/r1dubVob2oF2F38+AM0Yzh1cq2i2Zg==
   body: >-
     {
-        "AccountName": "PaulSavoie"
-        "ProjectSlug": {{projectName}},
-        "BuildVersion": {{buildVersion}}
+        "AccountName": "PaulSavoie",
+        "ProjectSlug": "{{projectName}}",
+        "BuildVersion": "{{buildVersion}}",
         "SigningPolicyId": "ec1-efd2-46c8-882a-837fa27a9c63"
     }
