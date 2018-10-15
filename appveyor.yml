@@ -4,7 +4,7 @@ artifacts:
   - path: '**\*.nupkg'
 notifications:
 - provider: Webhook
-  url: https://app.signpath.io/API/v1/a4ad2672-2c6c-4150-ac58-bb6a2458ecd5/Integrations/AppVeyor
+  url: https://fqa.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
@@ -17,10 +17,10 @@ notifications:
         "AccountName": "PaulSavoie",
         "ProjectSlug": "{{projectName}}",
         "BuildVersion": "{{buildVersion}}",
-        "SigningPolicyId": "78068278-ee00-451a-9413-b52e1ba3f4f3"
+        "SigningPolicyId": "ccd27ec1-efd2-46c8-882a-837fa27a9c63"
     }
 environment:
     AUTH:
         secure: +PaB+N7qRFmcKl9cvKG6DC3Yib+A1QdiBb0rcumYd8QImWqz6fpcAE/o/Yt62+CGHjxEL9+3TZxGH5YpRHqKyw==
 on_finish:
-    - ps: Invoke-WebRequest -Body @{"AccountName"="PaulSavoie";"ProjectSlug"=$Env:APPVEYOR_PROJECT_SLUG;"BuildVersion"=$Env:APPVEYOR_BUILD_VERSION;"SigningPolicyId"="78068278-ee00-451a-9413-b52e1ba3f4f3"} -Headers @{"Authorization"=$Env:AUTH;"Content-Type"="application/json"} -Method 'POST' -Uri "https://app.signpath.io/API/v1/a4ad2672-2c6c-4150-ac58-bb6a2458ecd5/Integrations/AppVeyor"
+    - ps: Invoke-WebRequest -Body @{"AccountName"="PaulSavoie";"ProjectSlug"=$Env:APPVEYOR_PROJECT_SLUG;"BuildVersion"=$Env:APPVEYOR_BUILD_VERSION;"SigningPolicyId"="536dfe53-a529-4f88-9619-f4ff127fec3c"} -Headers @{"Authorization"=$Env:AUTH;"Content-Type"="application/json"} -Method 'POST' -Uri "https://fqa.signpath.io/API/v1/277acb05-f400-4edd-83e1-9725e994ef5e/Integrations/AppVeyor"
