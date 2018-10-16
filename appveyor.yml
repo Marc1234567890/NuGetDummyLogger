@@ -19,8 +19,3 @@ notifications:
         "BuildVersion": "{{buildVersion}}",
         "SigningPolicyId": "ccd27ec1-efd2-46c8-882a-837fa27a9c63"
     }
-environment:
-    AUTH:
-        secure: ntHVU4zGIano6jWPIQD4YlDlqVPdvXHnNFHy8U2BvYqWGgoXkMej91xs9XnuDNDLfkfoyfVVc0TsAC7dEDxTsg==
-on_finish:
-  - ps: Invoke-WebRequest -Body ('{"AccountName":"PaulSavoie","ProjectSlug":"' + $Env:APPVEYOR_PROJECT_SLUG + '","BuildVersion":"' + $Env:APPVEYOR_BUILD_VERSION + '","SigningPolicyId":"ccd27ec1-efd2-46c8-882a-837fa27a9c63"}') -Headers @{"Authorization"=$Env:AUTH;"Content-Type"="application/json"} -Method 'POST' -Uri "https://fqa.test.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor"
