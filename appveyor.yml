@@ -4,6 +4,6 @@ artifacts:
   - path: '**\*.nupkg'
 deploy:
   provider: Webhook
-  url: https://signpath.requestcatcher.com/test
+  url: http://httpstat.us/400
   authorization: Basic aabbcc==
   request_timeout: 5
