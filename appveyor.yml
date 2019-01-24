@@ -2,16 +2,14 @@ image: Visual Studio 2017
 clone_folder: C:\Development\NuGetDummyLogger
 artifacts:
   - path: '**\*.nupkg'
-notifications:
-- provider: Webhook
- # url: https://fqa.test.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor?SigningPolicyId=ccd27ec1-efd2-46c8-882a-837fa27a9c63
-   url: https://webhook.site/e3f8c7c8-b558-443d-8491-34828d283e19?SigningPolicyId=33c284b1-6c9a-44e8-bde2-6bc48add97e8
-   on_build_success: true
-   on_build_failure: false
-   on_build_status_changed: false
-   method: POST
-   authorization:
- #    secure: ntHVU4zGIano6jWPIQD4YlDlqVPdvXHnNFHy8U2BvYqWGgoXkMej91xs9XnuDNDLfkfoyfVVc0TsAC7dEDxTsg==
+deploy:
+  - provider: Webhook
+    url: https://webhook.site/e3f8c7c8-b558-443d-8491-34828d283e19?SigningPolicyId=33c284b1-6c9a-44e8-bde2-6bc48add97e8
+    on_build_success: true
+    on_build_failure: false
+    on_build_status_changed: false
+    method: POST
+    authorization:
       secure: nQwiS2PBgVRqFOHcu1nkPfSa5Uh1lg75J66ZIxF6oEl+0PKYDUXuakGsakHDnomn
-   request_timeout: 5
+    request_timeout: 5
       
