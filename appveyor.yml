@@ -3,7 +3,8 @@ clone_folder: C:\Development\NuGetDummyLogger
 artifacts:
   - path: '**\*.nupkg'
 after_build:
-- ps: Write-Host (Invoke-webrequest -URI "https://fqa.test.signpath.io/API/healthz").Content
+- ps: Write-Host (Invoke-Webrequest -URI "https://api.ipify.org/?format=json").Content
+- ps: Write-Host (Invoke-Webrequest -URI "https://fqa.test.signpath.io/API/healthz").Content
 deploy:
 - provider: Webhook
   url: https://fqa.test.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor?SigningPolicyId=23dff214-e32b-462f-9c5c-b3592ee7260e
