@@ -3,13 +3,11 @@ clone_folder: C:\Development\NuGetDummyLogger
 artifacts:
   - path: '**\*.nupkg'
 deploy:
-  - provider: Webhook
-    url: https://webhook.site/e3f8c7c8-b558-443d-8491-34828d283e19?SigningPolicyId=33c284b1-6c9a-44e8-bde2-6bc48add97e8
-    on_build_success: true
-    on_build_failure: false
-    on_build_status_changed: false
-    method: POST
-    authorization:
-      secure: "+E+OcdcCcc7i7sVcIXmmjUeMqdr5t0P3Qqcx33LR2qSqgnrAiVcBp3Il80bBcrMQU5u2liwxdPHMbAn0ZB9iuA=="
-    request_timeout: 5
-      
+- provider: Webhook
+  url: https://fqa.test.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor?SigningPolicyId=23dff214-e32b-462f-9c5c-b3592ee7260e
+  on_build_success: true
+  on_build_failure: false
+  on_build_status_changed: false
+  method: POST
+  authorization:
+     secure: GbroUkt9UQmsuRCR88w2zwVncQUvu/VPt/nddZCQUSYERdOuHkETrSBfFm6E5eDnlBnPlKnR1NjI2s3RaCFnlA==
