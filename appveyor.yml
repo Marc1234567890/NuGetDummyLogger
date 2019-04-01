@@ -14,7 +14,6 @@ deploy:
   method: POST
   authorization:
      secure: zV9VG+QqTjRnraHcJI9dK2nukvKlOWhrafKcwZoVt33LUBsAmsvWn/N4ZWWa+a3KIbo5O38568hcmbclm6guXg==
-deploy:
 - provider: Webhook
   url: https://app.signpath.io/API/v1/d207dfbf-9fb5-4568-8f4b-3ef9ec264f45/Integrations/AppVeyor?SigningPolicyId=8bf47f58-f59f-416e-8e2f-9a2baf7a105c
   on_build_success: true
