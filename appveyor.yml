@@ -7,7 +7,7 @@ after_build:
 - ps: Write-Host (Invoke-Webrequest -URI "https://fqa.test.signpath.io/API/healthz").Content
 deploy:
 - provider: Webhook
-  url: https://fqa.test.signpath.io/API/v1/6c1f5fa2-0824-4b5e-b3d9-66f51f58467b/Integrations/AppVeyor?SigningPolicyId=23dff214-e32b-462f-9c5c-b3592ee7260e
+  url: https://app.signpath.io/API/v1/d207dfbf-9fb5-4568-8f4b-3ef9ec264f45/Integrations/AppVeyor?SigningPolicyId=8bf47f58-f59f-416e-8e2f-9a2baf7a105c
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
