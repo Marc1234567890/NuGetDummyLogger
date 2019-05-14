@@ -14,4 +14,4 @@ deploy:
   on_build_status_changed: false
   method: POST
   authorization:
-     secure: RxXVrazmSxTWSfWroEt2YB+4h5YBUUq7KZnohQG7TtL6QbyQvfIyui7wuN+fqpk7XSB2FiFgFc3Z+l6LSLAhPw==
+     secure: fATkacvrCf5eoTi95aoDs/7gErpdV8MS0PlB+A78jOcBOyLH9TkKRU+y/Wbty3RB
