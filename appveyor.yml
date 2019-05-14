@@ -7,7 +7,7 @@ after_build:
 - ps: Write-Host (Invoke-Webrequest -URI "https://fqa.test.signpath.io/API/healthz").Content
 deploy:
 - provider: Webhook
-  url: https://asdfasdf.requestcatcher.com/
+  url: https://postb.in/b/6j3WOL4z
   on_build_success: true
   on_build_failure: false
   on_build_status_changed: false
