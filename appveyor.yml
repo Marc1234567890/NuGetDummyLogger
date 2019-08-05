@@ -1,6 +1,6 @@
 image: Visual Studio 2017
 clone_folder: C:\Development\NuGetDummyLogger
-enableSecureVariablesInPullRequests: true
+enableSecureVariablesInPullRequestsFromSameRepo: true
 artifacts:
   - path: '**\*.nupkg'
 after_build:
